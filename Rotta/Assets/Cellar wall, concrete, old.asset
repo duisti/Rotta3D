@@ -30,7 +30,7 @@ MonoBehaviour:
   refinedArtifact:
     rid: -2
   selectedArtifact:
-    rid: -2
+    rid: 5030801642451370127
   m_Operators:
   - rid: 5030801642451370086
   - rid: 5030801642451370087
@@ -440,8 +440,8 @@ MonoBehaviour:
     - rid: 5030801642451370120
       type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
       data:
-        Guid: 
-        Seed: 0
+        Guid: e5f992e3-4948-45b6-9253-22a4832aa947
+        Seed: 405288674
         m_Operators:
         - rid: 5030801642451370121
         - rid: 5030801642451370122
@@ -519,8 +519,8 @@ MonoBehaviour:
     - rid: 5030801642451370127
       type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
       data:
-        Guid: 
-        Seed: 0
+        Guid: 477cc357-620d-4777-97d1-4c267d840d69
+        Seed: 3825126045
         m_Operators:
         - rid: 5030801642451370128
         - rid: 5030801642451370129
@@ -598,8 +598,8 @@ MonoBehaviour:
     - rid: 5030801642451370134
       type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
       data:
-        Guid: 
-        Seed: 0
+        Guid: d208b052-16c6-4052-9563-312d68eb327a
+        Seed: 1846700536
         m_Operators:
         - rid: 5030801642451370135
         - rid: 5030801642451370136
@@ -677,8 +677,8 @@ MonoBehaviour:
     - rid: 5030801642451370141
       type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
       data:
-        Guid: 
-        Seed: 0
+        Guid: 2f981429-0a17-4f17-b58b-f0265688a3eb
+        Seed: 2918692551
         m_Operators:
         - rid: 5030801642451370142
         - rid: 5030801642451370143
