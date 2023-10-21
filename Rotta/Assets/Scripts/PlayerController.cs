@@ -119,14 +119,10 @@ public class PlayerController : MonoBehaviour
             Instantiate(g, transform.position, Quaternion.identity);
             }
         }
-        if (gameMaster != null)
-        {
-            gameMaster.flashyLight.Flash();
-        }
         // model
         if (Model != null)
         {
-            Model.SetActive(false);
+            //Model.SetActive(false);
         }
     }
 
