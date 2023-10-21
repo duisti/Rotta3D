@@ -22,6 +22,17 @@ public class GameMaster : MonoBehaviour
 
     public List<float> scores = new List<float>();
     public List<string> prefixes = new List<string>();
+    public List<Sprite> images = new List<Sprite>();
+
+    public GameObject cheeseObject;
+
+    public List<Transform> spawnPoints = new List<Transform>();
+    public List<Transform> usedSpawnPoints = new List<Transform>();
+
+    public List<GameObject> placedCheese = new List<GameObject>();
+
+    public float SpawnTime = 5f;
+    float spawnTimerCount = 5f;
 
     public int currentRat = 0;
 
@@ -29,6 +40,49 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         
+    }
+
+    public void RemoveCheese (GameObject cheese, bool addScore)
+    {
+        int index = 0;
+        for (int i = 0; i < placedCheese.Count; i++)
+        {
+            if (cheese == placedCheese[i])
+            {
+                index = i;
+            }
+        }
+        GameObject g = placedCheese[index];
+        placedCheese.RemoveAt(index);
+        usedSpawnPoints.RemoveAt(index);
+        if (addScore)
+        {
+            scores[currentRat] += 30;
+        }
+        Destroy(g);
+    }
+
+    void HandleCheese()
+    {
+        if (!playing || gameOver) return;
+        spawnTimerCount -= Time.deltaTime;
+        if (spawnTimerCount <= 0f)
+        {
+            List<Transform> notUsedPoints = new List<Transform>();
+            foreach (Transform p in spawnPoints)
+            {
+                if (!usedSpawnPoints.Contains(p))
+                {
+                    notUsedPoints.Add(p);
+                }
+            }
+            if (notUsedPoints.Count != 0) {
+                var randomTrans = notUsedPoints[(int)Random.Range(0, notUsedPoints.Count)];
+                placedCheese.Add(Instantiate (cheeseObject, randomTrans.position, Quaternion.identity) as GameObject);
+                usedSpawnPoints.Add(randomTrans);
+            }
+            spawnTimerCount = SpawnTime;
+        }
     }
 
     // Update is called once per frame
@@ -48,12 +102,31 @@ public class GameMaster : MonoBehaviour
             StartCoroutine(GameCountDown());    
         } else
         {
+            scores[currentRat] += 1 * Time.deltaTime;
             if (currentMummo != null && currentRotta != null) {
             if (currentRotta.GetComponent<PlayerController>().dead && !gameOver)
                 {
+                    gameOver = true;
                     StartCoroutine(ResetGame());
+                    /*
+                    List<GameObject> list = new List<GameObject>();
+                    foreach (GameObject g in placedCheese)
+                    {
+                        list.Add(g);
+                    }
+                    placedCheese = new List<GameObject>();
+                    usedSpawnPoints = new List<Transform>();
+                    foreach (GameObject g in list)
+                    {
+                        if (g != null)
+                        {
+                            Destroy(g);
+                        }
+                    }
+                    */
                 }
             }
+            HandleCheese();
         }
     }
 
@@ -85,6 +158,7 @@ public class GameMaster : MonoBehaviour
         //logiikkaa
         gameOver = true;
         resetTimer = 3f;
+        
         while (resetTimer > 0f)
         {
             resetTimer -= Time.deltaTime;
