@@ -8,7 +8,7 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed = 25f;
+    public float speed = 20f;
     public float dashSpeed = 100f;
     float dashTimer = 3f;
     float timerDown = 3f;

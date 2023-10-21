@@ -68,7 +68,7 @@ Transform:
   m_Children:
   - {fileID: 220577230699163182}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &7614496222857334594
 Rigidbody:
@@ -104,7 +104,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2785160126018133684}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1350696310570e841baf5b5cd93e29f6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9836574fe11c92645af9a9b8342c9646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
-  dashSpeed: 50
+  speed: 22.5
+  dashSpeed: 37.5
   prefix: P1_
   dead: 0
   DeathEffects:

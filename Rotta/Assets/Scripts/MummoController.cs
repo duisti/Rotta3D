@@ -15,6 +15,7 @@ public class MummoController : MonoBehaviour
     float shotgunCooldown = 1f;
     float shotgunTimer = 0f;
     public GameObject SmallGibs;
+    float speedBoost = 0.15f;
 
     // Start is called before the first frame update
     private void Awake()
@@ -49,6 +50,7 @@ public class MummoController : MonoBehaviour
             }
         }
         shotgunTimer -= Time.deltaTime;
+        speed += speedBoost * Time.deltaTime;
     }
 
     void Shoot(Collider hitCollider)
