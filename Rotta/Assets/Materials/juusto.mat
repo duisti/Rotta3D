@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4767414435503537986
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 0
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: floor
+  m_Name: juusto
   m_Shader: {fileID: -6465566751694194690, guid: 871005594d5834f569740429db10d6b4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,27 +24,27 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AmbientOcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 8323f715059bd2d4aa9c87e294a31cfc, type: 3}
+        m_Texture: {fileID: 2800000, guid: f4cee9fde2d23804088bd5d4554f6e37, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 9ea3313b1dd2b72439d96020f39026dd, type: 3}
+        m_Texture: {fileID: 2800000, guid: e778393fe02e4d443b1d43bb05eefa26, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
-        m_Texture: {fileID: 2800000, guid: 1f5567301cfdb054c81d9260395079f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: f5f12e5aaff9b19448b7c0193ba1c9e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicMap:
-        m_Texture: {fileID: 2800000, guid: 13ce07cabd4081a46b01607ff5770d1e, type: 3}
+        m_Texture: {fileID: 2800000, guid: bb33b4df8f079a643a38e595c5236d2d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: dbbdfaa1477b3234282b430d2b882eaf, type: 3}
+        m_Texture: {fileID: 2800000, guid: f634f413356ba2f40b0ab88d6a943624, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:
-        m_Texture: {fileID: 2800000, guid: 97c5edf7e21a2104cb13569b00da792c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6a6749790e724a949bc33ec4f09f741e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -69,10 +56,23 @@ Material:
     - _HeightIntensity: 4
     - _MetallicIntensity: 1
     - _Rotation: 0
-    - _SmoothnessIntensity: 0
+    - _SmoothnessIntensity: 0.51600003
     - _TessellationFactor: 32
     - _UseDisplacement: 0
     m_Colors:
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 20, g: 10, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &3577468965483106763
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0

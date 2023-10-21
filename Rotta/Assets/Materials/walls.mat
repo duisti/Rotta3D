@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4767414435503537986
+--- !u!114 &-4252102379021437277
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: floor
+  m_Name: walls
   m_Shader: {fileID: -6465566751694194690, guid: 871005594d5834f569740429db10d6b4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,27 +37,27 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AmbientOcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 8323f715059bd2d4aa9c87e294a31cfc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 228117aedbded6442a16eb694fc16333, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 9ea3313b1dd2b72439d96020f39026dd, type: 3}
+        m_Texture: {fileID: 2800000, guid: c92db2eb016d9934f8dadae544249154, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
-        m_Texture: {fileID: 2800000, guid: 1f5567301cfdb054c81d9260395079f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: efa1f55c8e7e1fb4c94bbdf74cad5bc2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicMap:
-        m_Texture: {fileID: 2800000, guid: 13ce07cabd4081a46b01607ff5770d1e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3a3e384f08101c54e8fc9f30fabc6cfc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: dbbdfaa1477b3234282b430d2b882eaf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5d51145c4ffe8e5408165a2708ffec82, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:
-        m_Texture: {fileID: 2800000, guid: 97c5edf7e21a2104cb13569b00da792c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f201f7a967dc304fbb345086072d93e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -74,5 +74,5 @@ Material:
     - _UseDisplacement: 0
     m_Colors:
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 20, g: 10, b: 0, a: 0}
+    - _Tiling: {r: 2, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
